@@ -4,334 +4,283 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rasheduzzaman Shishir | Founder & CEO – RS GADGET BD</title>
-
-<meta name="description" content="Rasheduzzaman Shishir is the Founder & CEO of RS GADGET BD, a professional e-commerce and drop shipping entrepreneur specializing in electronics accessories and online business growth in Bangladesh.">
-<meta name="keywords" content="Rasheduzzaman Shishir, RS GADGET BD, E-commerce Entrepreneur Bangladesh, Drop Shipping Business, Electronics Accessories">
+<title>Rasheduzzaman Shishir | Founder & CEO of RS GADGET BD</title>
+<meta name="description" content="Rasheduzzaman Shishir is the Founder & CEO of RS GADGET BD, an entrepreneur and e-commerce specialist in electronics, mobile accessories, and drop shipping business in Bangladesh.">
+<meta name="keywords" content="Rasheduzzaman Shishir, RS GADGET BD, E-commerce Bangladesh, Drop Shipping Business, Mobile Accessories">
 <meta name="author" content="Rasheduzzaman Shishir">
 <meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ir86-wq.github.io/">
+
+<meta property="og:title" content="Rasheduzzaman Shishir | Founder & CEO">
+<meta property="og:description" content="Entrepreneur & E-commerce Specialist | RS GADGET BD">
+<meta property="og:image" content="https://ir86-wq.github.io/profile.jpg">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
 :root{
---bg:#f4f6f8;
---card:#ffffff;
---text:#333;
---primary:#2563eb;
---accent:#25d366;
+    --bg:#f4f6f8;
+    --card:#ffffff;
+    --text:#1f2937;
+    --primary:#2563eb;
+    --secondary:#7c3aed;
+    --accent:#ec4899;
+    --success:#22c55e;
 }
 body.dark{
---bg:#0b1220;
---card:#111827;
---text:#e5e7eb;
+    --bg:#0b1120;
+    --card:#111827;
+    --text:#e5e7eb;
 }
 *{box-sizing:border-box}
 body{
-margin:0;
-font-family:'Segoe UI',Arial,sans-serif;
-background:var(--bg);
-color:var(--text);
-transition:.4s;
+    margin:0;
+    font-family:'Segoe UI',Arial,sans-serif;
+    background:linear-gradient(135deg,#eef2ff,#fdf2f8);
+    color:var(--text);
+    transition:.4s;
+}
+body.dark{
+    background:linear-gradient(135deg,#020617,#020617);
 }
 .container{
-max-width:1200px;
-margin:auto;
-padding:50px 20px;
+    max-width:1150px;
+    margin:auto;
+    padding:40px 20px;
 }
+header,section{
+    background:var(--card);
+    border-radius:22px;
+    padding:40px;
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+    animation:fadeUp 1s ease;
+}
+header{
+    display:flex;
+    gap:35px;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+}
+header::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(120deg,rgba(37,99,235,.08),rgba(236,72,153,.08));
+    z-index:0;
+}
+header>*{position:relative}
 
-/* ===== COLOR SYSTEM ===== */
-.highlight-blue{color:#2563eb;font-weight:600}
-.highlight-green{color:#16a34a;font-weight:600}
-.highlight-orange{color:#ea580c;font-weight:600}
-.highlight-purple{color:#7c3aed;font-weight:600}
-.highlight-red{color:#dc2626;font-weight:600}
-
-.gradient-text{
-background:linear-gradient(90deg,#2563eb,#7c3aed,#db2777);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-font-weight:800;
-}
-
-.badge{
-display:inline-block;
-padding:4px 12px;
-border-radius:20px;
-font-size:12px;
-background:linear-gradient(90deg,#22c55e,#16a34a);
-color:#fff;
-margin-left:10px;
-}
-
-/* ===== CARDS ===== */
-.card{
-background:var(--card);
-border-radius:18px;
-padding:40px;
-box-shadow:0 20px 40px rgba(0,0,0,.1);
-margin-bottom:40px;
-animation:slideUp 1s ease;
-transition:.4s;
-}
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 35px 70px rgba(0,0,0,.25);
-}
-
-/* ===== HEADER ===== */
-.header{
-display:flex;
-flex-wrap:wrap;
-gap:35px;
-align-items:center;
-}
+/* PROFILE */
 .profile-pic{
-width:200px;
-height:200px;
-border-radius:50%;
-background:#ccc center/cover no-repeat;
-border:6px solid var(--primary);
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    background:url("profile.jpg") center/cover no-repeat;
+    border:7px solid transparent;
+    background-clip:padding-box;
+    box-shadow:0 0 0 6px var(--primary),0 20px 40px rgba(37,99,235,.45);
+    animation:zoomIn 1.2s ease;
 }
-h1{margin:0;font-size:38px}
-h2{margin:12px 0;font-size:18px;color:#6b7280}
-h3{
-color:var(--primary);
-margin-bottom:18px;
+
+/* HEADINGS */
+h1{
+    margin:0;
+    font-size:38px;
+    font-weight:800;
+    background:linear-gradient(90deg,var(--primary),var(--secondary),var(--accent));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
-h3::after{
-content:'';
-width:70px;
-height:4px;
-background:var(--primary);
-display:block;
-margin-top:10px;
-border-radius:6px;
+h2{
+    margin:10px 0;
+    font-size:19px;
+    color:#6b7280;
+}
+
+/* BADGES */
+.badges span{
+    display:inline-block;
+    margin:6px 8px 6px 0;
+    padding:6px 16px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+.badge-verified{background:var(--success);color:#fff}
+.badge-ceo{background:linear-gradient(45deg,#2563eb,#7c3aed);color:#fff}
+.badge-ecom{background:linear-gradient(45deg,#ec4899,#f97316);color:#fff}
+
+/* CONTACT */
+.contact p{margin:6px 0;font-size:14px}
+
+/* STATS */
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+    margin-top:25px;
+}
+.stat{
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:#fff;
+    padding:20px;
+    border-radius:18px;
+    text-align:center;
+    animation:float 3s ease-in-out infinite;
+}
+.stat h4{margin:0;font-size:26px}
+.stat p{margin:6px 0 0;font-size:13px}
+
+/* SECTIONS */
+section{margin-top:35px}
+section h3{
+    font-size:24px;
+    margin-bottom:12px;
+    background:linear-gradient(90deg,var(--primary),var(--accent));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 ul{padding-left:20px}
 ul li{margin-bottom:10px}
 
-/* ===== FLOATING BUTTONS ===== */
+/* TOGGLE */
 .toggle{
-position:fixed;
-top:20px;
-right:20px;
-background:var(--card);
-padding:12px 16px;
-border-radius:30px;
-cursor:pointer;
-box-shadow:0 10px 25px rgba(0,0,0,.3);
-z-index:1000;
+    position:fixed;
+    top:20px;
+    right:20px;
+    background:var(--card);
+    padding:10px 14px;
+    border-radius:30px;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+    z-index:1000;
 }
+
+/* WHATSAPP */
 .whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-width:65px;
-height:65px;
-background:var(--accent);
-color:#fff;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:32px;
-cursor:pointer;
-box-shadow:0 15px 30px rgba(0,0,0,.4);
-animation:pulse 2s infinite;
-z-index:999;
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:linear-gradient(135deg,#25d366,#16a34a);
+    color:#fff;
+    font-size:30px;
+    width:62px;
+    height:62px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    box-shadow:0 15px 35px rgba(0,0,0,.4);
+    animation:pulse 1.8s infinite;
+    z-index:999;
 }
 
-/* ===== CHAT POPUP ===== */
-.chat-popup{
-position:fixed;
-bottom:105px;
-right:25px;
-width:320px;
-background:#fff;
-border-radius:20px;
-box-shadow:0 30px 60px rgba(0,0,0,.4);
-display:none;
-animation:pop .4s ease;
-z-index:998;
+/* FOOTER */
+footer{
+    margin-top:45px;
+    text-align:center;
 }
-.chat-header{
-background:var(--accent);
-color:#fff;
-padding:16px;
-border-radius:20px 20px 0 0;
-font-weight:bold;
-}
-.chat-body{
-padding:20px;
-font-size:14px;
-}
-.chat-body a{
-display:block;
-margin-top:16px;
-background:var(--accent);
-color:#fff;
-padding:14px;
-border-radius:12px;
-text-align:center;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* ===== FOOTER ===== */
-footer{text-align:center;font-size:14px}
 .social a{
-font-size:24px;
-margin:0 14px;
-color:var(--text);
-transition:.3s;
+    font-size:24px;
+    margin:0 14px;
+    background:linear-gradient(45deg,var(--primary),var(--accent));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
-.social a:hover{color:var(--primary)}
 
-@keyframes slideUp{
-from{opacity:0;transform:translateY(50px)}
-to{opacity:1;transform:translateY(0)}
-}
-@keyframes pop{
-from{opacity:0;transform:scale(.6)}
-to{opacity:1;transform:scale(1)}
-}
-@keyframes pulse{
-0%{transform:scale(1)}
-50%{transform:scale(1.12)}
-100%{transform:scale(1)}
-}
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1}}
+@keyframes zoomIn{from{opacity:0;transform:scale(.6)}to{opacity:1}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 
 @media(max-width:768px){
-.header{flex-direction:column;text-align:center}
+    header{flex-direction:column;text-align:center}
 }
 </style>
 </head>
 
 <body>
 
-<div class="toggle" onclick="toggleDark()">
-<i class="fas fa-moon"></i>
-</div>
+<div class="toggle" onclick="toggleDark()"><i class="fas fa-moon"></i></div>
 
-<div class="whatsapp" onclick="toggleChat()">
+<a class="whatsapp" href="https://wa.me/8801339484000?text=Hello%20I%20am%20interested%20in%20your%20business" target="_blank">
 <i class="fab fa-whatsapp"></i>
-</div>
-
-<div class="chat-popup" id="chatPopup">
-<div class="chat-header">Chat with RS GADGET BD</div>
-<div class="chat-body">
-👋 Hello!  
-Interested in <strong>electronics</strong> or <strong>business inquiry</strong>?  
-<a href="https://wa.me/8801339484000?text=Hello%20RS%20GADGET%20BD,%20I%20am%20interested%20in%20your%20products." target="_blank">
-Chat Now
 </a>
-</div>
-</div>
 
 <div class="container">
 
-<div class="card header">
+<header>
 <div class="profile-pic"></div>
 <div>
-<h1 class="gradient-text">Rasheduzzaman Shishir</h1>
-<h2>
-Founder & CEO |
-<span class="highlight-blue">Entrepreneur</span> |
-<span class="highlight-purple">E-commerce Specialist</span>
-<span class="badge">Verified Business</span>
-</h2>
+<h1>Rasheduzzaman Shishir</h1>
+<h2>Founder & CEO | Entrepreneur | E-commerce Specialist</h2>
+
+<div class="badges">
+<span class="badge-verified">Verified Business</span>
+<span class="badge-ceo">Founder & CEO</span>
+<span class="badge-ecom">E-commerce Expert</span>
+</div>
+
+<div class="contact">
 <p><strong>Email:</strong> rasheduzzamanshishir86@gmail.com</p>
 <p><strong>Phone:</strong> 01339484000</p>
 </div>
-</div>
 
-<div class="card">
+<div class="stats">
+<div class="stat"><h4>5+</h4><p>Years Experience</p></div>
+<div class="stat"><h4>1000+</h4><p>Happy Customers</p></div>
+<div class="stat"><h4>24/7</h4><p>Online Support</p></div>
+</div>
+</div>
+</header>
+
+<section>
 <h3>Professional Profile</h3>
 <p>
-I am a <span class="highlight-orange">young and passionate entrepreneur</span> with strong experience in
-<span class="highlight-blue">electronics</span>,
-<span class="highlight-purple">drop shipping</span>, and
-<span class="highlight-green">online e-commerce business</span>.
-<br><br>
-As the <span class="highlight-red">Founder & CEO of RS GADGET BD</span>,
-I focus on building <strong>trustworthy brands</strong>,
-delivering <strong>quality tech products</strong>, and ensuring
-<span class="highlight-green">100% customer satisfaction</span>.
+Rasheduzzaman Shishir is a Bangladeshi entrepreneur and e-commerce specialist with strong expertise in electronics accessories,
+online retail management, drop shipping operations, and customer-centric brand building.
 </p>
-</div>
+</section>
 
-<div class="card">
-<h3>RS GADGET BD – Business Overview</h3>
+<section>
+<h3>Business Ventures</h3>
+<h4>RS GADGET BD</h4>
 <ul>
-<li><span class="highlight-blue">High-quality electronics & mobile accessories</span></li>
-<li><span class="highlight-green">AirPods, Airbuds, fast chargers & cables</span></li>
-<li><span class="highlight-orange">Affordable pricing with premium quality</span></li>
-<li><span class="highlight-purple">Nationwide delivery support</span></li>
-<li><span class="highlight-red">Customer-first business policy</span></li>
+<li>Mobile accessories including AirPods, Airbuds, chargers, adapters, and cables</li>
+<li>Consumer electronics and essential tech products</li>
+<li>Retail & online-based e-commerce operations</li>
+<li>Focus on product quality, affordability, and customer trust</li>
 </ul>
-</div>
 
-<div class="card">
-<h3>Professional Drop Shipping Business</h3>
+<h4>Drop Shipping & Online E-commerce</h4>
 <ul>
-<li><span class="highlight-blue">Market trend-based product research</span></li>
-<li><span class="highlight-purple">Verified & trusted suppliers</span></li>
-<li><span class="highlight-green">No inventory risk model</span></li>
-<li><span class="highlight-orange">Direct delivery to customers</span></li>
-<li><span class="highlight-red">After-sales support & dispute handling</span></li>
-<li><span class="highlight-green">Highly scalable business structure</span></li>
+<li>Advanced product research and market analysis</li>
+<li>Reliable supplier sourcing and coordination</li>
+<li>Order fulfillment without inventory holding</li>
+<li>Facebook, WhatsApp & digital marketing driven sales</li>
+<li>Customer support and long-term relationship management</li>
 </ul>
-</div>
+</section>
 
-<div class="card">
-<h3>Online E-commerce Operations</h3>
-<ul>
-<li><span class="highlight-blue">Facebook, Instagram & WhatsApp Commerce</span></li>
-<li><span class="highlight-green">Cash on Delivery & Mobile Banking</span></li>
-<li><span class="highlight-orange">Courier coordination nationwide</span></li>
-<li><span class="highlight-purple">Customer retention strategy</span></li>
-<li><span class="highlight-red">Brand reputation management</span></li>
-<li><span class="highlight-green">Seasonal promotions & offers</span></li>
-</ul>
-</div>
-
-<div class="card">
+<section>
 <h3>Skills & Expertise</h3>
 <ul>
-<li><span class="highlight-blue">Entrepreneurship & Leadership</span></li>
-<li><span class="highlight-purple">E-commerce & Drop Shipping</span></li>
-<li><span class="highlight-green">Supplier Management</span></li>
-<li><span class="highlight-orange">Digital Marketing</span></li>
-<li><span class="highlight-red">Customer Relationship Management</span></li>
-<li><span class="highlight-blue">Brand Growth Strategy</span></li>
+<li>Entrepreneurship & Business Strategy</li>
+<li>E-commerce & Drop Shipping Operations</li>
+<li>Digital Marketing & Online Sales Growth</li>
+<li>Supplier, Vendor & Customer Management</li>
+<li>Brand Identity & Trust Development</li>
 </ul>
-</div>
+</section>
 
-<div class="card">
-<h3>Business Ethics & Customer Commitment</h3>
-<ul>
-<li><span class="highlight-green">Honest product descriptions</span></li>
-<li><span class="highlight-blue">Transparent pricing</span></li>
-<li><span class="highlight-orange">Fast response time</span></li>
-<li><span class="highlight-purple">Customer-first mindset</span></li>
-<li><span class="highlight-red">Long-term trust building</span></li>
-</ul>
-</div>
-
-<div class="card">
+<section>
 <h3>Vision & Mission</h3>
-<p>
-<strong class="highlight-purple">Vision:</strong>
-Become one of the <span class="highlight-blue">most trusted electronics brands</span> in Bangladesh.
-</p>
-<p>
-<strong class="highlight-green">Mission:</strong>
-Deliver <span class="highlight-orange">affordable</span>,
-<span class="highlight-blue">high-quality tech products</span> while building
-<span class="highlight-red">long-term customer relationships</span>.
-</p>
-</div>
+<p><strong>Vision:</strong> To become one of the most trusted and recognized electronics brands in Bangladesh.</p>
+<p><strong>Mission:</strong> To deliver high-quality, affordable technology products while ensuring transparency,
+reliability, and long-term customer satisfaction.</p>
+</section>
 
 <footer>
 <div class="social">
@@ -339,7 +288,7 @@ Deliver <span class="highlight-orange">affordable</span>,
 <a href="https://www.instagram.com/rasheduzzaman.shishir" target="_blank"><i class="fab fa-instagram"></i></a>
 <a href="https://wa.me/8801339484000" target="_blank"><i class="fab fa-whatsapp"></i></a>
 </div>
-<p>© 2026 Rasheduzzaman Shishir | RS GADGET BD</p>
+<p>© 2026 Rasheduzzaman Shishir | Founder & CEO, RS GADGET BD</p>
 </footer>
 
 </div>
@@ -347,10 +296,6 @@ Deliver <span class="highlight-orange">affordable</span>,
 <script>
 function toggleDark(){
 document.body.classList.toggle("dark");
-}
-function toggleChat(){
-const chat=document.getElementById("chatPopup");
-chat.style.display = chat.style.display==="block" ? "none" : "block";
 }
 </script>
 
