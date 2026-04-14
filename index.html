@@ -83,12 +83,14 @@ header::before {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background: url("profile.jpg") center/cover no-repeat; /* Replace with your actual image path */
+  background: url("profile.jpg") center/cover no-repeat; /* Replace with your image path */
   border: 8px solid #fff;
   box-shadow: 0 0 30px rgba(0,0,0,0.6);
   margin: 20px;
   animation: zoomIn 1.2s ease;
 }
+
+/* Text Styles */
 h1 {
   font-size: 2.8rem;
   font-weight: 700;
@@ -108,6 +110,8 @@ h2 {
   animation: fadeIn 1s forwards;
   animation-delay: 0.8s;
 }
+
+/* Badges */
 .badges {
   margin-top: 20px;
   display: flex;
@@ -132,15 +136,6 @@ h2 {
 .badges span:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-}
-.badge-verified {
-  background: linear-gradient(135deg, #34d399, #10b981);
-}
-.badge-ceo {
-  background: linear-gradient(135deg, #3b82f6, #6366f1);
-}
-.badge-ecom {
-  background: linear-gradient(135deg, #f59e0b, #ef4444);
 }
 
 /* Contact & Stats */
@@ -280,23 +275,53 @@ body.light footer {
   animation: pulse 2s infinite;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments - Enhanced */
+@media(max-width: 1024px) {
+  header {
+    flex-direction: column;
+  }
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+}
 @media(max-width: 768px){
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   header {
     padding: 20px;
   }
   .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
   section {
     padding: 30px 15px;
   }
   footer {
     padding: 20px;
+  }
+}
+@media(max-width: 480px){
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .badges span {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+  .stat h4 {
+    font-size: 1.5rem;
+  }
+  .social a {
+    font-size: 20px;
   }
 }
 </style>
