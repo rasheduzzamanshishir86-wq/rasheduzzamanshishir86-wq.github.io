@@ -198,7 +198,6 @@ section h3 {
   background: linear-gradient(90deg, #ef4444, #3b82f6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: fadeIn 1s ease;
 }
 ul {
   padding-left: 20px;
@@ -266,14 +265,6 @@ body.light footer {
   from { opacity: 0; transform: scale(0.6); }
   to { opacity: 1; transform: scale(1); }
 }
-/* Pulse effect for CTA buttons or icons if needed */
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-}
-.whatsapp {
-  animation: pulse 2s infinite;
-}
 
 /* Responsive adjustments - Enhanced */
 @media(max-width: 1024px) {
@@ -299,16 +290,20 @@ body.light footer {
     width: 180px;
     height: 180px;
   }
-  section {
-    padding: 30px 15px;
-  }
-  footer {
-    padding: 20px;
-  }
 }
 @media(max-width: 480px){
+  body {
+    padding: 10px;
+  }
+  header {
+    padding: 20px 10px;
+  }
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   h2 {
     font-size: 1rem;
@@ -318,18 +313,38 @@ body.light footer {
     padding: 8px 16px;
   }
   .stat h4 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
-  .social a {
-    font-size: 20px;
+  /* Make profile picture smaller and centered for mobile */
+  header {
+    flex-direction: column;
+  }
+  /* Full width button style for mobile chat button */
+  .whatsapp-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+    margin-top: 20px;
   }
 }
 </style>
 </head>
 <body>
 
-<!-- WhatsApp Button -->
-<a class="whatsapp" href="https://wa.me/8801339484000?text=Hello%20I%20am%20interested%20in%20your%20business" target="_blank" aria-label="Chat on WhatsApp" style="position:fixed; bottom:20px; right:20px; background:linear-gradient(135deg, #ff6f61, #6a82fb); padding:15px; border-radius:50%; box-shadow:0 4px 15px rgba(0,0,0,0.4); color:#fff; font-size:24px; display:flex; align-items:center; justify-content:center; z-index:1000;"><i class="fab fa-whatsapp"></i></a>
+<!-- WhatsApp Button (styled for mobile) -->
+<a class="whatsapp-btn" href="https://wa.me/8801339484000?text=Hello%20I%20am%20interested%20in%20your%20business" target="_blank" style="
+  display: block; 
+  width: 100%; 
+  background: linear-gradient(135deg, #ff6f61, #6a82fb); 
+  padding: 12px; 
+  border-radius: 25px; 
+  text-align: center; 
+  color: #fff; 
+  font-weight: 600; 
+  font-size: 1rem; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-decoration: none;">Chat on WhatsApp</a>
 
 <div class="container">
 
