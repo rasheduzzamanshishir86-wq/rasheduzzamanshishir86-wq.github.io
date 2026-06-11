@@ -5,17 +5,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rasheduzzaman Shishir | Founder & CEO of RS GADGET BD & NEXO</title>
+<title>Rasheduzzaman Shishir | Founder of RS GADGET BD & NEXO | Managing Director of M/S Master Enterprise</title>
 
-<meta name="description" content="Rasheduzzaman Shishir is a Bangladeshi entrepreneur and Founder of RS GADGET BD & NEXO, specializing in electronics, mobile accessories, and e-commerce business.">
+<meta name="description" content="Rasheduzzaman Shishir is a Bangladeshi entrepreneur, Founder of RS GADGET BD & NEXO, and Managing Director of M/S Master Enterprise, specializing in electronics, mobile accessories, e-commerce, and contracting business.">
 
-<meta name="keywords" content="Rasheduzzaman Shishir, NEXO, RS GADGET BD, Bangladesh Tech Brand, AirPods, Earbuds, Chargers, Power Banks">
+<meta name="keywords" content="Rasheduzzaman Shishir, NEXO, RS GADGET BD, Bangladesh Tech Brand, AirPods, Earbuds, Chargers, Power Banks, Master Enterprise, Contractor Bangladesh">
 
 <meta name="author" content="Rasheduzzaman Shishir">
 
 <meta property="og:title" content="Rasheduzzaman Shishir | Entrepreneur & Founder">
 
-<meta property="og:description" content="Founder of RS GADGET BD & NEXO">
+<meta property="og:description" content="Founder of RS GADGET BD & NEXO | Managing Director of M/S Master Enterprise">
 
 <meta property="og:image" content="profile.jpg">
 
@@ -35,6 +35,8 @@
 --secondary:#7c3aed;
 --accent:#ec4899;
 --success:#22c55e;
+--construction:#f59e0b;
+--construction-dark:#b45309;
 }
 
 body.dark{
@@ -105,6 +107,7 @@ background:url('profile.jpg') center/cover no-repeat;
 border:6px solid transparent;
 box-shadow:0 0 0 6px var(--primary),
 0 20px 45px rgba(37,99,235,.35);
+flex-shrink:0;
 }
 
 h1{
@@ -153,6 +156,10 @@ background:linear-gradient(45deg,#2563eb,#7c3aed);
 
 .badge-ecom{
 background:linear-gradient(45deg,#ec4899,#f97316);
+}
+
+.badge-contractor{
+background:linear-gradient(45deg,#f59e0b,#b45309);
 }
 
 .contact{
@@ -213,6 +220,111 @@ transform:translateY(-10px);
 font-size:42px;
 margin-bottom:15px;
 }
+
+/* ── Master Enterprise styles ── */
+
+.enterprise-banner{
+background:linear-gradient(120deg,#f59e0b,#b45309);
+border-radius:18px;
+padding:22px 28px;
+margin-bottom:28px;
+display:flex;
+align-items:center;
+gap:18px;
+color:#fff;
+}
+
+.enterprise-banner i{
+font-size:48px;
+flex-shrink:0;
+}
+
+.enterprise-banner h4{
+font-size:26px;
+font-weight:800;
+margin-bottom:4px;
+}
+
+.enterprise-banner p{
+font-size:14px;
+opacity:.9;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:18px;
+margin-top:20px;
+}
+
+.service-card{
+background:linear-gradient(135deg,#f59e0b,#b45309);
+color:#fff;
+padding:24px 18px;
+border-radius:18px;
+text-align:center;
+transition:.3s;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(245,158,11,.35);
+}
+
+.service-card i{
+font-size:36px;
+margin-bottom:12px;
+}
+
+.service-card h5{
+font-size:15px;
+font-weight:700;
+}
+
+.enterprise-stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:16px;
+margin-top:22px;
+}
+
+.e-stat{
+background:linear-gradient(135deg,#fef3c7,#fde68a);
+color:#92400e;
+padding:18px;
+border-radius:14px;
+text-align:center;
+border:2px solid #f59e0b;
+}
+
+body.dark .e-stat{
+background:linear-gradient(135deg,#292524,#3b2d1a);
+color:#fbbf24;
+border-color:#b45309;
+}
+
+.e-stat h4{
+font-size:24px;
+font-weight:800;
+margin-bottom:4px;
+}
+
+.e-stat p{
+font-size:12px;
+font-weight:600;
+}
+
+.divider{
+border:none;
+border-top:2px solid #f3f4f6;
+margin:28px 0;
+}
+
+body.dark .divider{
+border-color:#1f2937;
+}
+
+/* ── end Master Enterprise ── */
 
 ul{
 padding-left:20px;
@@ -345,9 +457,7 @@ font-size:36px;
 <a class="whatsapp"
 href="https://wa.me/8801339484000?text=Hello%20I%20am%20interested%20in%20your%20business"
 target="_blank">
-
 <i class="fab fa-whatsapp"></i>
-
 </a>
 
 <div class="container">
@@ -360,15 +470,17 @@ target="_blank">
 
 <h1>Rasheduzzaman Shishir</h1>
 
-<h2>Founder & CEO | Entrepreneur | E-commerce Specialist</h2>
+<h2>Founder & CEO of RS GADGET BD & NEXO | Managing Director of M/S Master Enterprise</h2>
 
 <div class="badges">
 
 <span class="badge-verified">Verified Business</span>
 
-<span class="badge-ceo">Founder & CEO</span>
+<span class="badge-ceo">Founder & CEO | MD of Master Enterprise</span>
 
 <span class="badge-ecom">E-commerce Expert</span>
+
+<span class="badge-contractor">Licensed Contractor</span>
 
 </div>
 
@@ -395,6 +507,11 @@ target="_blank">
 </div>
 
 <div class="stat">
+<h4>3</h4>
+<p>Active Businesses</p>
+</div>
+
+<div class="stat">
 <h4>24/7</h4>
 <p>Online Support</p>
 </div>
@@ -416,17 +533,119 @@ online retail management, drop shipping operations, and customer-centric brand b
 
 <br><br>
 
-He is the Founder of RS GADGET BD and the creator of NEXO — a modern tech accessories brand focused on premium gadgets,
-wireless accessories, and smart electronic essentials in Bangladesh.
+He is the Founder of RS GADGET BD, the creator of NEXO — a modern tech accessories brand focused on premium gadgets,
+wireless accessories, and smart electronic essentials in Bangladesh — and the Proprietor of M/S Master Enterprise,
+a licensed contracting business serving government and private sector projects across Bangladesh.
 
 </p>
 
 </section>
 
+<!-- ═══════════════════════════════════════════════════════════ -->
 <section>
 
 <h3>Business Ventures</h3>
 
+<!-- ── M/S Master Enterprise (NEW) ── -->
+<div class="enterprise-banner">
+  <i class="fas fa-hard-hat"></i>
+  <div>
+    <h4>M/S Master Enterprise</h4>
+    <p>Licensed Contractor & Construction Business — Bangladesh</p>
+  </div>
+</div>
+
+<p>
+  M/S Master Enterprise is a licensed contracting firm
+  operating across Bangladesh. The company undertakes government-registered and private sector
+  construction, supply, and civil works contracts, bringing reliability, on-time delivery, and
+  professional project management to every engagement.
+</p>
+
+<br>
+
+<div class="services-grid">
+
+  <div class="service-card">
+    <i class="fas fa-building"></i>
+    <h5>Civil Construction</h5>
+  </div>
+
+  <div class="service-card">
+    <i class="fas fa-road"></i>
+    <h5>Road & Infrastructure</h5>
+  </div>
+
+  <div class="service-card">
+    <i class="fas fa-box-open"></i>
+    <h5>Supply & Procurement</h5>
+  </div>
+
+  <div class="service-card">
+    <i class="fas fa-file-contract"></i>
+    <h5>Govt. Tender Works</h5>
+  </div>
+
+  <div class="service-card">
+    <i class="fas fa-wrench"></i>
+    <h5>Repair & Maintenance</h5>
+  </div>
+
+</div>
+
+<br>
+
+<h4 style="margin-bottom:14px; color:var(--construction);">Key Services & Operations</h4>
+
+<ul>
+
+  <li>Registered contractor for government tender and procurement projects in Bangladesh</li>
+
+  <li>Civil construction works including buildings, boundary walls, and structural development</li>
+
+  <li>Road construction, repair, and earthwork projects for public and private clients</li>
+
+  <li>Material supply and procurement — cement, rods, bricks, and construction materials</li>
+
+  <li>Project supervision, site management, and workforce coordination</li>
+
+  <li>Electrical and plumbing sub-contracting works</li>
+
+  <li>Timely project execution with full compliance to client specifications</li>
+
+  <li>Long-term partnerships with local government bodies and private developers</li>
+
+</ul>
+
+<br>
+
+<div class="enterprise-stats">
+
+  <div class="e-stat">
+    <h4>Govt.</h4>
+    <p>Registered Contractor</p>
+  </div>
+
+  <div class="e-stat">
+    <h4>BD</h4>
+    <p>Nationwide Operations</p>
+  </div>
+
+  <div class="e-stat">
+    <h4>Civil</h4>
+    <p>Construction Expertise</p>
+  </div>
+
+  <div class="e-stat">
+    <h4>B2B</h4>
+    <p>Tender & Private Works</p>
+  </div>
+
+</div>
+
+<hr class="divider">
+
+<!-- ── RS GADGET BD ── -->
 <h4 style="margin-bottom:15px;">RS GADGET BD</h4>
 
 <ul>
@@ -480,6 +699,7 @@ wireless accessories, and smart electronic essentials in Bangladesh.
 </ul>
 
 </section>
+<!-- ═══════════════════════════════════════════════════════════ -->
 
 <section>
 
@@ -531,6 +751,12 @@ wireless accessories, and smart electronic essentials in Bangladesh.
 
 <li>Customer Experience & Online Retail Operations</li>
 
+<li>Contracting & Civil Works Project Management</li>
+
+<li>Government Tender Participation & Compliance</li>
+
+<li>Construction Site Supervision & Workforce Coordination</li>
+
 </ul>
 
 </section>
@@ -542,13 +768,14 @@ wireless accessories, and smart electronic essentials in Bangladesh.
 <p>
 
 <strong>Vision:</strong>
-To become one of the most trusted and recognized electronics and tech accessories brands in Bangladesh.
+To become one of the most trusted and recognized multi-sector entrepreneurs in Bangladesh — leading
+in both modern technology retail and quality construction & contracting services.
 
 <br><br>
 
 <strong>Mission:</strong>
-To deliver high-quality, affordable technology products while ensuring transparency,
-reliability, and long-term customer satisfaction.
+To deliver high-quality, affordable technology products and professional contracting services while
+ensuring transparency, reliability, and long-term customer and client satisfaction across every business.
 
 </p>
 
@@ -623,7 +850,7 @@ Visit Store
 
 <p style="margin-top:20px;">
 
-© 2026 Rasheduzzaman Shishir | Founder of RS GADGET BD & NEXO
+© 2026 Rasheduzzaman Shishir | Founder of RS GADGET BD & NEXO | Managing Director of M/S Master Enterprise
 
 </p>
 
